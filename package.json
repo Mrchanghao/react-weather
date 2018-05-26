@@ -1,8 +1,8 @@
 {
-  "name": "expensify",
+  "name": "weather-app",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Andrew Mead",
+  "author": "lee chang ho",
   "license": "MIT",
   "scripts": {
     "serve": "live-server public/",
