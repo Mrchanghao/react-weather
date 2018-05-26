@@ -5,9 +5,9 @@
 **/bin/
 **/gen/
 .gradle/
-build/
-node_modules/
-public/
+/build
+/node_modules
+/public
 local.properties
 **/proguard/
 *.log
