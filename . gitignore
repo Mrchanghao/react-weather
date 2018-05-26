@@ -1,3 +1,13 @@
-node_modeules
-
-public
+*.apk
+*.ap_
+*.dex
+*.class
+**/bin/
+**/gen/
+.gradle/
+build/
+node_modules/
+public/
+local.properties
+**/proguard/
+*.log
