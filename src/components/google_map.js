@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../styles/components/google_map.scss'
 
 class GoogleMap extends Component {
     constructor(props) {
@@ -7,7 +8,7 @@ class GoogleMap extends Component {
     }
     render() {
         return (
-            <div>
+            <div className='google'>
                 GoogleMap
             </div>
         );

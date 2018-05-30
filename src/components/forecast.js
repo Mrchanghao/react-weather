@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import '../styles/components/forecast.scss';
+
 
 class Forecast extends Component {
     constructor(props) {
@@ -7,7 +9,7 @@ class Forecast extends Component {
     }
     render() {
         return (
-            <div>
+            <div className='forecast'>
                 Forecast
             </div>
         );
