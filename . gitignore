@@ -11,3 +11,4 @@
 local.properties
 **/proguard/
 *.log
+/config/config.js
