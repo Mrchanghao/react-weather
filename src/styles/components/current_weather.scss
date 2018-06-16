@@ -1,5 +1,6 @@
 
 .location {
+    margin-top: -10px;
     text-align: center;
     font-size: 40px;
     color: white;
@@ -8,13 +9,15 @@
 .weather {
     text-align: center;
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 200;
     color: white;
+    margin: 1rem auto;
 }
 
 .temperature {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 100;
     color: white;
+    font-weight: 200;
 }

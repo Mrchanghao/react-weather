@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import '../styles/components/forecast.scss';
 import WeatherItem from './weather_item';
-
+import axios from 'axios';
+import {config} from '../config/config'
 class Forecast extends Component {
+    
     state = {
         weather: [
             {week: 'Sun', image: 'http://openweathermap.org/img/w/10d.png'},

@@ -7,12 +7,17 @@ import '../styles/components/App.scss'
 
 class App extends Component {
     
+    state = {
+        lat: 37.566535,
+        lng: 126.977969
+    }
+
     render() {
         return (
           <div id='app'>
               <div id='information'>
                 <div id='current-weather'>
-                    <CurrentWeather/>
+                    <CurrentWeather lat={this.state.lat} lng={this.state.lng}/>
                  </div>
                  <hr />
                 <div id='forecast'>
