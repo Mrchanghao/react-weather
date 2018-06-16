@@ -12,7 +12,7 @@ class GoogleMap extends Component {
             position: center,
             map: map
         })
-        // 맵을 이동했을 경우 맵 중앙에 마커가 위치하도록 하는 이벤트
+        // 맵을 이동했을 경우 맵 중앙에 마커가 위치하도록 하는     이벤트
         map.addListener('center_changed', () => {
             marker.setPosition(map.getCenter())
         })

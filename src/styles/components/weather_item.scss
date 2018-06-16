@@ -1,0 +1,24 @@
+.item {
+    position: relative;
+    flex: 1;
+    color: #fff;
+    text-align: center;
+    list-style: none;
+}
+
+.item:first-child::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    border-radius: 50%;
+    background-color: #fa4444;
+}
+.item > .temperature {
+    margin-top: -8px; 
+    font-size: 1.2rem;
+}

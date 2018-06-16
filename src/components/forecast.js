@@ -1,16 +1,29 @@
 import React, { Component } from 'react';
 import '../styles/components/forecast.scss';
-
+import WeatherItem from './weather_item';
 
 class Forecast extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  };
+    state = {
+        weather: [
+            {week: 'Sun', image: 'http://openweathermap.org/img/w/10d.png'},
+            {week: 'Sun', image: 'http://openweathermap.org/img/w/10d.png'},
+            {week: 'Sun', image: 'http://openweathermap.org/img/w/10d.png'},
+            {week: 'Sun', image: 'http://openweathermap.org/img/w/10d.png'},
+            {week: 'Sun', image: 'http://openweathermap.org/img/w/10d.png'},
+            {week: 'Sun', image: 'http://openweathermap.org/img/w/10d.png'},
+            {week: 'Sun', image: 'http://openweathermap.org/img/w/10d.png'}
+        ]
     }
     render() {
         return (
-            <div className='forecast'>
-                Forecast
+            <div>
+                <ul className='forecasts'>
+                    {this.state.weather.map((data, i) => {
+                        return (
+                            <WeatherItem key={i} week={data.week} icon={data.image} />
+                        )
+                    })}
+                </ul>
             </div>
         );
     }
